@@ -27,8 +27,7 @@ public function definition()
             'reviews' => $this->faker->text,
             'ISBN' => $this->faker->isbn13,
             'pages' => $this->faker->numberBetween(31, 200),
-            'org_price' => $this->faker->randomFloat(2, 5, 20),
-            'curr_value' => $this->faker->randomFloat(2, 5, 20),
+            'cost' => $this->faker->randomFloat(2, 5, 20),
             'published' => $this->faker->datetime()
         ];
     }

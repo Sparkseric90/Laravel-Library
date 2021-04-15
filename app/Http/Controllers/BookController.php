@@ -29,6 +29,8 @@ class BookController extends Controller
     $book = Book::find($id);
 //     $book = Book::factory()->make();
     $book->title = $request->title;
+    $book->pages = $request->pages;
+    $book->cost = $request->cost;
     
     $book->save();
     return $book;

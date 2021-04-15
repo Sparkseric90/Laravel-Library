@@ -18,10 +18,9 @@ class CreateBooksTable extends Migration
             $table->string('title');
             $table->text('excerpt');
             $table->text('reviews');
-            $table->char('ISBN', 13);
+            $table->char('ISBN');
             $table->integer('pages');
-            $table->float('org_price');
-            $table->float('curr_value');
+            $table->float('cost');
             $table->datetime('published');
             $table->timestamps();
         });
